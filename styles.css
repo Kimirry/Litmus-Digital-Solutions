@@ -3,9 +3,6 @@
     padding: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-.background-img {
-    background-image: url('images/pair.png')
-}
 .header {
     display: flex;
     justify-content: space-between;
@@ -117,12 +114,6 @@ h1 {
         margin: 1rem;
     }
 }
-@media only screen and (min-width: 42rem) {
-
-    .intro {
-        margin: 0;
-    }
-}
 .intro {
     display: flex;
     background-color: green;
@@ -139,7 +130,6 @@ h1 {
 }
 .slider {
     display: block;
-    margin: auto
 }
 hr {
   width: 60%;
@@ -147,22 +137,32 @@ hr {
   height: 1px;
   background-color: rgb(18, 167, 105);
   margin: auto;
-  margin-top: 5rem
+  margin-top: 6rem;
+  margin-bottom: 3rem;
 }
 .slider-track {
   display: flex;
   flex-wrap: wrap;
   gap: 5px;
+  margin-left: 3rem;
+}
+@media ony screen and (max-width: 56rem) {
+    .slider-track {
+         margin: auto;
+    }
+    .slider-track > div {
+        margin: 2rem 4px;
+    }
 }
 .slider-track > div {
   flex: 0 0 auto;
   width: 140px;
   height: 170px;
-  background: white;
+  background: rgb(250, 250, 250);
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out;
-  margin: 2rem 1rem;
+  margin: 4rem 1rem;
 }
 .slider-track > div:hover {
   transform: scale(1.06);
@@ -173,8 +173,7 @@ hr {
   object-fit: cover;
 }
 .slider-track {
-        display: flex;
-        flex-wrap: wrap;
+  display: flex; 
 }
 .description {
     display: block;
@@ -193,9 +192,8 @@ hr {
     overflow: hidden;
     display: block
 }
-.section2 {
-    margin: 3rem;
-    max-height: 134rem;
+.flex-container {
+    justify-content: center;
 }
 .section2 h2 {
     text-align: center;
@@ -224,7 +222,7 @@ hr {
     border-radius: 10px 50px;
     flex-grow: 1;
     max-width: 400px;
-    padding: 1rem 5rem;
+    padding: 1rem 4rem;
 }
 .section3 {
     text-align: center;
